@@ -21,11 +21,6 @@ h1 {
   font-size: 96px;
 }
 
-i {
-  background-color: var(--primary-color);
-  padding: 100px;
-}
-
 button {
   border: 1px solid #272142;
   background-color: rgba(0, 0, 0, 0);
@@ -68,11 +63,10 @@ button {
   margin: 10px 0px;
 }
 
-.image-forecast,
-.image-dictionary,
-.image-game {
-  display: flex;
-  justify-content: center;
+.img-background {
+  background-color: var(--primary-color);
+  padding: 100px;
+  text-align: center;
   font-size: 96px;
 }
 
