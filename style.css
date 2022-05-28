@@ -23,8 +23,6 @@ h1 {
 
 i {
   background-color: var(--primary-color);
-  display: block;
-  margin: 0 auto;
   padding: 100px;
 }
 
