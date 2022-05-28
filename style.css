@@ -4,6 +4,10 @@
   --primary-color: #f9f7fe;
 }
 
+body {
+  margin: 8px;
+}
+
 h1,
 h2,
 h3,
@@ -29,10 +33,11 @@ button {
   color: #1a1c20;
   font-family: var(--default-font-family);
   font-size: 12px;
-  padding: 8px 25px 8px;
+  padding: 8px;
   position: relative;
   text-decoration: none;
-  margin: 20px 0px;
+  margin: 10px 0px;
+  width: 118px;
 }
 
 .hero {
@@ -49,22 +54,18 @@ button {
   color: var(--primary-font-color);
   font-family: var(--default-font-family);
   font-size: 24px;
-  width: 480px;
-  background: linear-gradient(
-    to bottom,
-    transparent 50%,
-    rgb(233, 244, 87) 50%
-  );
+  width: 467px;
+  background: linear-gradient(to bottom, transparent 50%, #50ef42 50%);
 }
 
 .hero a {
   color: var(--primary-font-color);
 }
 
-.portfolio {
+.project-type {
   font-size: 16px;
   padding: 0px 60px;
-  margin: 20px 0px;
+  margin: 10px 0px;
 }
 
 .image-forecast,
@@ -81,7 +82,7 @@ button {
 
 .github-link::after {
   content: "";
-  background-color: rgb(233, 244, 87);
+  background-color: #50ef42;
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -89,4 +90,20 @@ button {
   top: 7px;
   left: 7px;
   transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  .project-type {
+    text-align: center;
+  }
+
+  .image-forecast,
+  .image-dictionary,
+  .image-game {
+    display: none;
+  }
 }
