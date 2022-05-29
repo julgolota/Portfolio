@@ -40,7 +40,7 @@ button {
   padding: 200px 60px;
 }
 
-.hero h2 {
+h2 {
   font-size: 36px;
   color: var(--primary-font-color);
 }
@@ -84,6 +84,21 @@ button {
   top: 7px;
   left: 7px;
   transition: 0.2s;
+}
+
+.content-container {
+  padding: 200px 60px;
+}
+
+.email-link {
+  color: var(--primary-font-color);
+  width: 600px;
+
+  background: linear-gradient(to bottom, transparent 50%, #50ef42 50%);
+}
+
+.email-link:hover {
+  color: var(--primary-font-color);
 }
 
 @media (max-width: 768px) {
