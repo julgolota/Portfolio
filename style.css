@@ -1,11 +1,42 @@
 :root {
   --default-font-family: "Poppins";
   --primary-font-color: #272142;
+  --secondary-font-color: #423380;
   --primary-color: #f9f7fe;
 }
 
 body {
-  margin: 8px;
+  font-family: var(--default-font-family);
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  font-weight: bold;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 40px;
+}
+
+nav a {
+  color: var(--primary-font-color);
+  text-decoration: none;
+}
+
+nav a:hover,
+a.active {
+  color: #50ef42;
+  transition: all 150ms ease-in-out;
 }
 
 h1,
@@ -19,6 +50,11 @@ h6 {
 
 h1 {
   font-size: 96px;
+}
+
+h2 {
+  font-size: 36px;
+  color: var(--primary-font-color);
 }
 
 button {
@@ -40,11 +76,6 @@ button {
   padding: 200px 60px;
 }
 
-h2 {
-  font-size: 36px;
-  color: var(--primary-font-color);
-}
-
 .hero p {
   color: var(--primary-font-color);
   font-family: var(--default-font-family);
@@ -60,6 +91,15 @@ h2 {
 .content {
   font-size: 16px;
   margin: 10px 0px;
+}
+
+.content a,
+.content i {
+  color: var(--primary-font-color);
+  font-size: 36px;
+  text-align: center;
+  margin-left: 40px;
+  padding: 0;
 }
 
 .img-background {
@@ -90,23 +130,26 @@ h2 {
   padding: 200px 60px;
 }
 
-.email-link {
-  color: var(--primary-font-color);
-  width: 600px;
-
-  background: linear-gradient(to bottom, transparent 50%, #50ef42 50%);
-}
-
-.email-link:hover {
-  color: var(--primary-font-color);
-}
-
 @media (max-width: 768px) {
   h1 {
     font-size: 60px;
   }
 
+  h2 {
+    font-size: 30px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .hero p {
+    font-size: 20px;
+    width: 400px;
+  }
+
   .content {
+    font-size: 14px;
     text-align: center;
   }
 }
