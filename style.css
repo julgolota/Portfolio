@@ -132,6 +132,11 @@ button {
   padding: 200px 60px;
 }
 
+.contacts-container {
+  background-color: var(--primary-color);
+  padding: 200px 60px;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 60px;
