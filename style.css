@@ -57,9 +57,8 @@ button {
   color: var(--primary-font-color);
 }
 
-.project-type {
+.content {
   font-size: 16px;
-  padding: 0px 60px;
   margin: 10px 0px;
 }
 
@@ -68,6 +67,7 @@ button {
   padding: 100px;
   text-align: center;
   font-size: 96px;
+  width: 250px;
 }
 
 .github-link {
@@ -91,13 +91,7 @@ button {
     font-size: 60px;
   }
 
-  .project-type {
+  .content {
     text-align: center;
-  }
-
-  .image-forecast,
-  .image-dictionary,
-  .image-game {
-    display: none;
   }
 }
