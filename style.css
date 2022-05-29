@@ -34,7 +34,7 @@ nav a {
 }
 
 nav a:hover,
-a.active {
+nav a.active {
   color: #50ef42;
   transition: all 150ms ease-in-out;
 }
@@ -93,13 +93,15 @@ button {
   margin: 10px 0px;
 }
 
-.content a,
-.content i {
+.contacts {
+  text-align: center;
+}
+
+.contacts a {
   color: var(--primary-font-color);
   font-size: 36px;
   text-align: center;
-  margin-left: 40px;
-  padding: 0;
+  margin-right: 40px;
 }
 
 .img-background {
@@ -136,7 +138,7 @@ button {
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   nav a {
@@ -151,5 +153,10 @@ button {
   .content {
     font-size: 14px;
     text-align: center;
+  }
+
+  .contacts a {
+    font-size: 28px;
+    margin-right: 20px;
   }
 }
