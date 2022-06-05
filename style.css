@@ -71,6 +71,31 @@ button {
   width: 118px;
 }
 
+footer {
+  margin: 60px 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--primary-font-color);
+  background: var(--primary-color);
+  padding: 10px 16px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: var(--secondary-font-color);
+}
+
 .hero {
   background-color: var(--primary-color);
   padding: 200px 60px;
@@ -144,6 +169,10 @@ button {
 
   h2 {
     font-size: 28px;
+  }
+
+  h4 {
+    font-size: 22px;
   }
 
   nav a {
